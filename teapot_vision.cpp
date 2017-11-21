@@ -190,11 +190,23 @@ public:
     // For the sake of this assignment, a teapot is defined to be
     // inside the view frustum if and only if the position data
     // member is within the volume defined by the view frustum.
+    glm::mat4 lookAtMatrix;
+    mainCamera.lookAtMatrix(lookAtMatrix); //camera.h line 272
+
+
     for(int i = 0; i < teapotCount; i++){
+      UtahTeapot* ut = teapots[i];  //utah tepot datatype
+      //calc look at matrix (bring teapot into cam space)
+      // teapot position * lookatmatrix ()
+      glm::vec4 cameraSpaceTeapot = lookAtMatrix*glm::vec4(ut->position, 1.0);
+      glm::vec4 pv = clipPlaneMatrix*cameraSpaceTeapot;
       // do something here to check to see if the teapots
       // are in or out of the view frustum. Set the visibility
-      // flag as needed.
-      teapots[i]->visible = true;
+      if(-pv.w < pv.x && pv.x < pv.w && -pv.w < pv.y && pv.y < pv.w && -pv.w < pv.z && pv.z < pv.w)
+      teapots[i]->visible = true;// flag as needed.
+      else
+      teapots[i]->visible = false;
+
     }
   }
 

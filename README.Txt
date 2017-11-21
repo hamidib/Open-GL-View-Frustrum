@@ -1,0 +1,4 @@
+Bijan Hamidi
+bhamidi@csu.fullerton.edu
+
+The changes made are all located in the checkVisibility function.  A look at matrix is created with the main camera using the method in camera.h line 272.  I then iterate through the teapot array using the provided for loop.  we then multiply the look at matrix to the current teapot's position to bring the teapot into camera space.  The clip plane matrix is then multipled by this result to get view frustrum with the teapot center.  This matrix is then used in a conditional statement to see if the center lies in the center of the view frustum in between all 6 planes of the view frustrum. If it is then set the teapot visibility to true.

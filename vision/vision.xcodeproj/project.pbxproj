@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFB70DD81FBBDDB600DF653F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DD71FBBDDAE00DF653F /* IOKit.framework */; };
+		BFB70DDB1FBBDDCC00DF653F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DDA1FBBDDC500DF653F /* CoreGraphics.framework */; };
+		BFB70DDC1FBBDDD300DF653F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DD91FBBDDBE00DF653F /* AppKit.framework */; };
+		BFB70DDE1FBBDDE200DF653F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DDD1FBBDDDB00DF653F /* OpenGL.framework */; };
+		BFB70DE01FBBDDEF00DF653F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DDF1FBBDDE900DF653F /* CoreVideo.framework */; };
+		BFB70DE21FBBDDFB00DF653F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DE11FBBDDF500DF653F /* GLKit.framework */; };
+		BFB70DE81FBBDE0B00DF653F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DE31FBBDE0A00DF653F /* libglfw3.a */; };
+		BFB70DE91FBBDE0B00DF653F /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DE41FBBDE0A00DF653F /* libfreeimage.a */; };
+		BFB70DEA1FBBDE0B00DF653F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DE51FBBDE0B00DF653F /* libGLEW.a */; };
+		BFB70DEB1FBBDE0B00DF653F /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DE61FBBDE0B00DF653F /* libgtest_main.a */; };
+		BFB70DEC1FBBDE0B00DF653F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB70DE71FBBDE0B00DF653F /* libgtest.a */; };
+		BFB70DFE1FBBDE3800DF653F /* teapot_vision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DEF1FBBDE3600DF653F /* teapot_vision.cpp */; };
+		BFB70DFF1FBBDE3800DF653F /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF81FBBDE3700DF653F /* utilities.cpp */; };
+		BFB70E001FBBDE3800DF653F /* glut_teapot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DFD1FBBDE3700DF653F /* glut_teapot.cpp */; };
+		BFB70E011FBBDE5900DF653F /* blinn_phong.frag.glsl in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF41FBBDE3700DF653F /* blinn_phong.frag.glsl */; };
+		BFB70E021FBBDE5900DF653F /* blinn_phong.vert.glsl in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF51FBBDE3700DF653F /* blinn_phong.vert.glsl */; };
+		BFB70E031FBBDE5900DF653F /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DFB1FBBDE3700DF653F /* Camera.h */; };
+		BFB70E041FBBDE5900DF653F /* GLFWApp.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF91FBBDE3700DF653F /* GLFWApp.h */; };
+		BFB70E051FBBDE5900DF653F /* GLSLShader.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF61FBBDE3700DF653F /* GLSLShader.h */; };
+		BFB70E061FBBDE5900DF653F /* GLTexture.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF01FBBDE3600DF653F /* GLTexture.h */; };
+		BFB70E071FBBDE5900DF653F /* glut_teapot.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF31FBBDE3700DF653F /* glut_teapot.h */; };
+		BFB70E081FBBDE5900DF653F /* Material.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DEE1FBBDE3600DF653F /* Material.h */; };
+		BFB70E091FBBDE5900DF653F /* no_lighting.frag.glsl in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF11FBBDE3600DF653F /* no_lighting.frag.glsl */; };
+		BFB70E0A1FBBDE5900DF653F /* no_lighting.vert.glsl in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DFA1FBBDE3700DF653F /* no_lighting.vert.glsl */; };
+		BFB70E0B1FBBDE5900DF653F /* SpinningLight.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF71FBBDE3700DF653F /* SpinningLight.h */; };
+		BFB70E0C1FBBDE5900DF653F /* Teapot.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DED1FBBDE3600DF653F /* Teapot.h */; };
+		BFB70E0D1FBBDE5900DF653F /* UtahTeapot.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DF21FBBDE3700DF653F /* UtahTeapot.h */; };
+		BFB70E0E1FBBDE5900DF653F /* utilities.h in Sources */ = {isa = PBXBuildFile; fileRef = BFB70DFC1FBBDE3700DF653F /* utilities.h */; };
+		BFB70E0F1FBBDE7500DF653F /* blinn_phong.frag.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFB70DF41FBBDE3700DF653F /* blinn_phong.frag.glsl */; };
+		BFB70E101FBBDE7500DF653F /* blinn_phong.vert.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFB70DF51FBBDE3700DF653F /* blinn_phong.vert.glsl */; };
+		BFB70E111FBBDE7500DF653F /* no_lighting.frag.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFB70DF11FBBDE3600DF653F /* no_lighting.frag.glsl */; };
+		BFB70E121FBBDE7500DF653F /* no_lighting.vert.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFB70DFA1FBBDE3700DF653F /* no_lighting.vert.glsl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFB70DCA1FBBDD8800DF653F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BFB70E0F1FBBDE7500DF653F /* blinn_phong.frag.glsl in CopyFiles */,
+				BFB70E101FBBDE7500DF653F /* blinn_phong.vert.glsl in CopyFiles */,
+				BFB70E111FBBDE7500DF653F /* no_lighting.frag.glsl in CopyFiles */,
+				BFB70E121FBBDE7500DF653F /* no_lighting.vert.glsl in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BFB70DCC1FBBDD8800DF653F /* vision */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vision; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB70DD71FBBDDAE00DF653F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		BFB70DD91FBBDDBE00DF653F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BFB70DDA1FBBDDC500DF653F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFB70DDD1FBBDDDB00DF653F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BFB70DDF1FBBDDE900DF653F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BFB70DE11FBBDDF500DF653F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BFB70DE31FBBDE0A00DF653F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
+		BFB70DE41FBBDE0A00DF653F /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = ../../../../usr/local/lib/libfreeimage.a; sourceTree = "<group>"; };
+		BFB70DE51FBBDE0B00DF653F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/lib/libGLEW.a; sourceTree = "<group>"; };
+		BFB70DE61FBBDE0B00DF653F /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = ../../../../usr/local/lib/libgtest_main.a; sourceTree = "<group>"; };
+		BFB70DE71FBBDE0B00DF653F /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../usr/local/lib/libgtest.a; sourceTree = "<group>"; };
+		BFB70DED1FBBDE3600DF653F /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teapot.h; path = ../../Teapot.h; sourceTree = "<group>"; };
+		BFB70DEE1FBBDE3600DF653F /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Material.h; path = ../../Material.h; sourceTree = "<group>"; };
+		BFB70DEF1FBBDE3600DF653F /* teapot_vision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = teapot_vision.cpp; path = ../../teapot_vision.cpp; sourceTree = "<group>"; };
+		BFB70DF01FBBDE3600DF653F /* GLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLTexture.h; path = ../../GLTexture.h; sourceTree = "<group>"; };
+		BFB70DF11FBBDE3600DF653F /* no_lighting.frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = no_lighting.frag.glsl; path = ../../no_lighting.frag.glsl; sourceTree = "<group>"; };
+		BFB70DF21FBBDE3700DF653F /* UtahTeapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtahTeapot.h; path = ../../UtahTeapot.h; sourceTree = "<group>"; };
+		BFB70DF31FBBDE3700DF653F /* glut_teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glut_teapot.h; path = ../../glut_teapot.h; sourceTree = "<group>"; };
+		BFB70DF41FBBDE3700DF653F /* blinn_phong.frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = blinn_phong.frag.glsl; path = ../../blinn_phong.frag.glsl; sourceTree = "<group>"; };
+		BFB70DF51FBBDE3700DF653F /* blinn_phong.vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = blinn_phong.vert.glsl; path = ../../blinn_phong.vert.glsl; sourceTree = "<group>"; };
+		BFB70DF61FBBDE3700DF653F /* GLSLShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLSLShader.h; path = ../../GLSLShader.h; sourceTree = "<group>"; };
+		BFB70DF71FBBDE3700DF653F /* SpinningLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpinningLight.h; path = ../../SpinningLight.h; sourceTree = "<group>"; };
+		BFB70DF81FBBDE3700DF653F /* utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilities.cpp; path = ../../utilities.cpp; sourceTree = "<group>"; };
+		BFB70DF91FBBDE3700DF653F /* GLFWApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLFWApp.h; path = ../../GLFWApp.h; sourceTree = "<group>"; };
+		BFB70DFA1FBBDE3700DF653F /* no_lighting.vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = no_lighting.vert.glsl; path = ../../no_lighting.vert.glsl; sourceTree = "<group>"; };
+		BFB70DFB1FBBDE3700DF653F /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = ../../Camera.h; sourceTree = "<group>"; };
+		BFB70DFC1FBBDE3700DF653F /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilities.h; path = ../../utilities.h; sourceTree = "<group>"; };
+		BFB70DFD1FBBDE3700DF653F /* glut_teapot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glut_teapot.cpp; path = ../../glut_teapot.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFB70DC91FBBDD8800DF653F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB70DE81FBBDE0B00DF653F /* libglfw3.a in Frameworks */,
+				BFB70DE91FBBDE0B00DF653F /* libfreeimage.a in Frameworks */,
+				BFB70DEA1FBBDE0B00DF653F /* libGLEW.a in Frameworks */,
+				BFB70DEB1FBBDE0B00DF653F /* libgtest_main.a in Frameworks */,
+				BFB70DEC1FBBDE0B00DF653F /* libgtest.a in Frameworks */,
+				BFB70DE21FBBDDFB00DF653F /* GLKit.framework in Frameworks */,
+				BFB70DE01FBBDDEF00DF653F /* CoreVideo.framework in Frameworks */,
+				BFB70DDE1FBBDDE200DF653F /* OpenGL.framework in Frameworks */,
+				BFB70DDC1FBBDDD300DF653F /* AppKit.framework in Frameworks */,
+				BFB70DDB1FBBDDCC00DF653F /* CoreGraphics.framework in Frameworks */,
+				BFB70DD81FBBDDB600DF653F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFB70DC31FBBDD8800DF653F = {
+			isa = PBXGroup;
+			children = (
+				BFB70DCE1FBBDD8800DF653F /* vision */,
+				BFB70DCD1FBBDD8800DF653F /* Products */,
+				BFB70DD61FBBDDAE00DF653F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFB70DCD1FBBDD8800DF653F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFB70DCC1FBBDD8800DF653F /* vision */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFB70DCE1FBBDD8800DF653F /* vision */ = {
+			isa = PBXGroup;
+			children = (
+				BFB70DF41FBBDE3700DF653F /* blinn_phong.frag.glsl */,
+				BFB70DF51FBBDE3700DF653F /* blinn_phong.vert.glsl */,
+				BFB70DFB1FBBDE3700DF653F /* Camera.h */,
+				BFB70DF91FBBDE3700DF653F /* GLFWApp.h */,
+				BFB70DF61FBBDE3700DF653F /* GLSLShader.h */,
+				BFB70DF01FBBDE3600DF653F /* GLTexture.h */,
+				BFB70DFD1FBBDE3700DF653F /* glut_teapot.cpp */,
+				BFB70DF31FBBDE3700DF653F /* glut_teapot.h */,
+				BFB70DEE1FBBDE3600DF653F /* Material.h */,
+				BFB70DF11FBBDE3600DF653F /* no_lighting.frag.glsl */,
+				BFB70DFA1FBBDE3700DF653F /* no_lighting.vert.glsl */,
+				BFB70DF71FBBDE3700DF653F /* SpinningLight.h */,
+				BFB70DEF1FBBDE3600DF653F /* teapot_vision.cpp */,
+				BFB70DED1FBBDE3600DF653F /* Teapot.h */,
+				BFB70DF21FBBDE3700DF653F /* UtahTeapot.h */,
+				BFB70DF81FBBDE3700DF653F /* utilities.cpp */,
+				BFB70DFC1FBBDE3700DF653F /* utilities.h */,
+			);
+			path = vision;
+			sourceTree = "<group>";
+		};
+		BFB70DD61FBBDDAE00DF653F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFB70DE41FBBDE0A00DF653F /* libfreeimage.a */,
+				BFB70DE51FBBDE0B00DF653F /* libGLEW.a */,
+				BFB70DE31FBBDE0A00DF653F /* libglfw3.a */,
+				BFB70DE61FBBDE0B00DF653F /* libgtest_main.a */,
+				BFB70DE71FBBDE0B00DF653F /* libgtest.a */,
+				BFB70DE11FBBDDF500DF653F /* GLKit.framework */,
+				BFB70DDF1FBBDDE900DF653F /* CoreVideo.framework */,
+				BFB70DDD1FBBDDDB00DF653F /* OpenGL.framework */,
+				BFB70DDA1FBBDDC500DF653F /* CoreGraphics.framework */,
+				BFB70DD91FBBDDBE00DF653F /* AppKit.framework */,
+				BFB70DD71FBBDDAE00DF653F /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFB70DCB1FBBDD8800DF653F /* vision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB70DD31FBBDD8800DF653F /* Build configuration list for PBXNativeTarget "vision" */;
+			buildPhases = (
+				BFB70DC81FBBDD8800DF653F /* Sources */,
+				BFB70DC91FBBDD8800DF653F /* Frameworks */,
+				BFB70DCA1FBBDD8800DF653F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vision;
+			productName = vision;
+			productReference = BFB70DCC1FBBDD8800DF653F /* vision */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFB70DC41FBBDD8800DF653F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "bijan hamidi";
+				TargetAttributes = {
+					BFB70DCB1FBBDD8800DF653F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BFB70DC71FBBDD8800DF653F /* Build configuration list for PBXProject "vision" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFB70DC31FBBDD8800DF653F;
+			productRefGroup = BFB70DCD1FBBDD8800DF653F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFB70DCB1FBBDD8800DF653F /* vision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFB70DC81FBBDD8800DF653F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB70E011FBBDE5900DF653F /* blinn_phong.frag.glsl in Sources */,
+				BFB70E021FBBDE5900DF653F /* blinn_phong.vert.glsl in Sources */,
+				BFB70E031FBBDE5900DF653F /* Camera.h in Sources */,
+				BFB70E041FBBDE5900DF653F /* GLFWApp.h in Sources */,
+				BFB70E051FBBDE5900DF653F /* GLSLShader.h in Sources */,
+				BFB70E061FBBDE5900DF653F /* GLTexture.h in Sources */,
+				BFB70E071FBBDE5900DF653F /* glut_teapot.h in Sources */,
+				BFB70E081FBBDE5900DF653F /* Material.h in Sources */,
+				BFB70E091FBBDE5900DF653F /* no_lighting.frag.glsl in Sources */,
+				BFB70E0A1FBBDE5900DF653F /* no_lighting.vert.glsl in Sources */,
+				BFB70E0B1FBBDE5900DF653F /* SpinningLight.h in Sources */,
+				BFB70E0C1FBBDE5900DF653F /* Teapot.h in Sources */,
+				BFB70E0D1FBBDE5900DF653F /* UtahTeapot.h in Sources */,
+				BFB70E0E1FBBDE5900DF653F /* utilities.h in Sources */,
+				BFB70E001FBBDE3800DF653F /* glut_teapot.cpp in Sources */,
+				BFB70DFF1FBBDE3800DF653F /* utilities.cpp in Sources */,
+				BFB70DFE1FBBDE3800DF653F /* teapot_vision.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BFB70DD11FBBDD8800DF653F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BFB70DD21FBBDD8800DF653F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BFB70DD41FBBDD8800DF653F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/usr/local/include,
+					"/users/kazzdingo/teapot-vision-hamidib/**",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/usr/local/lib,
+					"/users/kazzdingo/teapot-vision-hamidib/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFB70DD51FBBDD8800DF653F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFB70DC71FBBDD8800DF653F /* Build configuration list for PBXProject "vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB70DD11FBBDD8800DF653F /* Debug */,
+				BFB70DD21FBBDD8800DF653F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFB70DD31FBBDD8800DF653F /* Build configuration list for PBXNativeTarget "vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB70DD41FBBDD8800DF653F /* Debug */,
+				BFB70DD51FBBDD8800DF653F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFB70DC41FBBDD8800DF653F /* Project object */;
+}
